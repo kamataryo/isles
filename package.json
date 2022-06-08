@@ -1,0 +1,22 @@
+{
+  "name": "isles",
+  "version": "0.0.1",
+  "description": "A maplibre/mapbox style featuring island hopping.",
+  "main": "style.json",
+  "scripts": {
+    "start": "charites serve style.yml --provider geolonia",
+    "start:maputnik": "/usr/local/bin/maputnik --watch --file ./style.json",
+    "build": "charites build style.yml style.json"
+  },
+  "repository": "git+https://github.com/kamataryo/isles.git",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kamataryo/isles/issues"
+  },
+  "homepage": "https://github.com/kamataryo/isles#readme",
+  "devDependencies": {
+    "@unvt/charites": "^0.1.2"
+  },
+  "author": "kamataryo <kamataryo@users.noreply.github.com>",
+  "private": true
+}

@@ -1,0 +1,19 @@
+id: railway
+type: line
+source: geolonia
+source-layer: transportation
+filter:
+  - all
+  - - '=='
+    - class
+    - rail
+paint:
+  line-color: '#888'
+  line-width:
+    stops:
+      - - 10
+        - 0.4
+      - - 18
+        - 2
+      - - 22
+        - 10
