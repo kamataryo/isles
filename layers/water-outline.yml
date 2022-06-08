@@ -1,0 +1,9 @@
+id: water-outline
+type: line
+source: geolonia-water
+source-layer: water
+layout:
+  visibility: visible
+paint:
+  line-color: black
+  line-opacity: .2

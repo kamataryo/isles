@@ -10,6 +10,9 @@ filter:
   - - '=='
     - class
     - ocean
+  - - '!='
+    - disputed
+    - japan_northern_territories
 layout:
   text-font:
     - Noto Sans Regular
@@ -21,6 +24,6 @@ layout:
   symbol-spacing: 350
   text-letter-spacing: 0.2
 paint:
-  text-color: '#FFFFFF'
+  text-color: '#74aee9'
   text-halo-width: 1.5
-  text-halo-color: '#000000'
+  text-halo-color: rgba(255,255,255,0.7)

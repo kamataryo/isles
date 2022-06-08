@@ -11,8 +11,9 @@ layout:
   line-join: round
   visibility: visible
 paint:
-  line-color: rgba(108, 159, 182, 1)
-  line-width: 1.1
+  line-color: "#953553" # red purple
+  line-opacity: .6
+  line-width: .8
   line-dasharray:
-    - 2
-    - 2
+    - 10
+    - 3

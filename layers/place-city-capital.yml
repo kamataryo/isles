@@ -10,20 +10,23 @@ filter:
   - - '=='
     - class
     - city
+  - - '!='
+    - disputed
+    - japan_northern_territories
 layout:
   text-font:
-    - Noto Sans Regular
-  text-size: 14
+    - Noto Sans CJK JP
+  text-size: 18
   text-field: '{name}'
   text-max-width: 8
-  icon-image: star-11
+  icon-image: star
   text-offset:
     - 0.4
-    - 0
-  icon-size: 0.8
+    - -0.1
+  icon-size: 1
   text-anchor: left
   visibility: visible
 paint:
-  text-color: rgba(85, 85, 85, 1)
+  text-color: '#333'
   text-halo-width: 1.2
-  text-halo-color: rgba(255, 255, 255, 1)
+  text-halo-color: rgba(255,255,255,0.8)

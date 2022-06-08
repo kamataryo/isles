@@ -17,6 +17,9 @@ filter:
     - tertiary
     - minor
     - service
+  - - '!='
+    - disputed
+    - japan_northern_territories
 layout:
   symbol-placement: line
   icon-image: oneway

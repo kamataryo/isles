@@ -2,22 +2,17 @@ id: boundary-land-level-4
 type: line
 source: geolonia
 source-layer: boundary
+minzoom: 8
 maxzoom: 14
 filter:
   - all
-  - - '>='
+  - - '=='
     - admin_level
     - 4
-  - - <=
-    - admin_level
-    - 8
-  - - '!='
-    - maritime
-    - 1
 layout:
   line-join: round
 paint:
-  line-color: '#9e9cab'
+  line-color: 'rgba(68,68,68,0.7)'
   line-dasharray:
     - 3
     - 1
@@ -26,9 +21,7 @@ paint:
   line-width:
     base: 1.4
     stops:
-      - - 4
-        - 0.4
-      - - 5
-        - 1
+      - - 8
+        - 1.2
       - - 12
         - 2

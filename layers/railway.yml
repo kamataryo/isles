@@ -7,16 +7,13 @@ filter:
   - - '=='
     - class
     - rail
-  - - '!in'
-    - brunnel
-    - tunnel
 paint:
-  line-color: rgba(153, 153, 153, 0.8)
+  line-color: '#888'
   line-width:
     stops:
       - - 10
-        - 0.8
+        - 0.4
       - - 18
-        - 4
+        - 2
       - - 22
-        - 20
+        - 10

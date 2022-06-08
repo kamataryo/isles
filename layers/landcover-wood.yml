@@ -3,20 +3,13 @@ type: fill
 source: geolonia
 source-layer: landcover
 filter:
-  - any
-  - - '=='
-    - class
-    - wood
-  - - '=='
-    - class
-    - public_park
-  - - '=='
-    - class
-    - grass
+  - '=='
+  - class
+  - wood
+layout:
+  visibility: visible
 paint:
-  fill-color: rgba(245, 245, 245, 1)
-  fill-opacity: 1
-  fill-outline-color: hsla(0, 0%, 0%, 0.03)
+  fill-color: '#bce398'
   fill-antialias:
     base: 1
     stops:

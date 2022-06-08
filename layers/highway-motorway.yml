@@ -8,26 +8,33 @@ filter:
   - - '=='
     - $type
     - LineString
-  - - all
-    - - '!in'
-      - brunnel
-      - bridge
-      - tunnel
-    - - '=='
-      - class
-      - motorway
+  - - '!in'
+    - brunnel
+    - bridge
+    - tunnel
+  - - '=='
+    - class
+    - motorway
+  - - '!has'
+    - ramp
 layout:
   line-cap: round
   line-join: round
-  visibility: visible
 paint:
-  line-color: '#eeeeee'
-  line-width:
-    base: 1.2
-    stops:
-      - - 6.5
-        - 0
-      - - 7
-        - 0.5
-      - - 20
-        - 18
+  line-color:
+    - interpolate
+    - - linear
+    - - zoom
+    - 8
+    - '#4ed19e'
+    - 11
+    - '#9be0c5'
+  line-opacity:
+    - interpolate
+    - - linear
+    - - zoom
+    - 8
+    - 0.6
+    - 11
+    - 1
+  line-width: !!inc/file layers/components/broad-road-width.yml

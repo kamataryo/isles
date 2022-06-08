@@ -73,6 +73,10 @@
         map.on('mouseleave', item.id, mouseLeave)
       })
     })
+    .on('click', (e) => {
+      const features = map.queryRenderedFeatures(e.point)
+      console.log({features})
+    })
   </script>
 </body>
 </html>
