@@ -1,27 +1,22 @@
 {
-  "name": "geolonia-notebook",
-  "version": "0.1.0",
-  "description": "3D style based on default style for [Geolonia](https://geolonia.com/).",
+  "name": "isles",
+  "version": "0.0.1",
+  "description": "A maplibre/mapbox style featuring island hopping.",
   "main": "style.json",
   "scripts": {
     "start": "charites serve style.yml --provider geolonia",
     "start:maputnik": "/usr/local/bin/maputnik --watch --file ./style.json",
     "build": "charites build style.yml style.json"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/geoloniamaps/notebook.git"
-  },
-  "author": {
-    "name": "Geolonia Inc.",
-    "url": "https://geolonia.com/"
-  },
+  "repository": "git+https://github.com/kamataryo/isles.git",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/geoloniamaps/notebook/issues"
+    "url": "https://github.com/kamataryo/isles/issues"
   },
-  "homepage": "https://github.com/geoloniamaps/notebook#readme",
+  "homepage": "https://github.com/kamataryo/isles#readme",
   "devDependencies": {
     "@unvt/charites": "^0.1.2"
-  }
+  },
+  "author": "kamataryo <kamataryo@users.noreply.github.com>",
+  "private": true
 }
